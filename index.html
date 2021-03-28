@@ -23,10 +23,9 @@
       }
 
       $.ajax({
-        url: "http://apis.daum.net/search/image",
+        url: "https://dapi.kakao.com/v3/search/image",
         dataType: "json",
-        type: "post",
-        jsonp: "callback",
+        method: "GET",
         data: {
           apikey: "a5fa63fbf60b83b1be369d82e50f96b9", //다음 API KEY 입력
           q: $("#q").val(), // search keyword
